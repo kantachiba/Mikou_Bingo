@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビンゴ抽選アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 ビンゴ抽選</h1>
+            <p class="subtitle">1 〜 99</p>
+        </header>
+
+        <main>
+            <div class="current-number-section">
+                <div class="current-number-label">現在の番号</div>
+                <div class="current-number" id="currentNumber">--</div>
+                <div class="remaining-count">残り: <span id="remainingCount">99</span>個</div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-draw" id="drawBtn">
+                    <span class="btn-text">抽選する</span>
+                </button>
+                <button class="btn btn-reset" id="resetBtn">
+                    <span class="btn-text">リセット</span>
+                </button>
+            </div>
+
+            <div class="history-section">
+                <h2>抽選履歴</h2>
+                <div class="history-grid" id="historyGrid">
+                    <div class="empty-message">まだ抽選されていません</div>
+                </div>
+            </div>
+
+            <div class="all-numbers-section">
+                <h2>全ての番号</h2>
+                <div class="numbers-grid" id="numbersGrid"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
