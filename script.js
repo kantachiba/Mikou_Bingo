@@ -2,7 +2,7 @@
 class BingoApp {
     constructor() {
         this.maxNumber = 75;
-        this.maxDrawCount = 30; // 最大抽選回数
+        this.maxDrawCount = 75; // 最大抽選回数
         this.allNumbers = this.generateNumbers();
         this.drawnNumbers = [];
         this.availableNumbers = [...this.allNumbers];
