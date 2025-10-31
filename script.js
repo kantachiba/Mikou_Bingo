@@ -1,7 +1,7 @@
 // ビンゴ抽選アプリのメインロジック
 class BingoApp {
     constructor() {
-        this.maxNumber = 99;
+        this.maxNumber = 77;
         this.maxDrawCount = 30; // 最大抽選回数
         this.allNumbers = this.generateNumbers();
         this.drawnNumbers = [];
@@ -12,7 +12,7 @@ class BingoApp {
         this.renderAllNumbers();
     }
 
-    // 1から99までの数字配列を生成
+    // 1から77までの数字配列を生成
     generateNumbers() {
         return Array.from({ length: this.maxNumber }, (_, i) => i + 1);
     }
@@ -96,7 +96,7 @@ class BingoApp {
         
         const spin = () => {
             if (counter < totalSpins) {
-                // ランダムな数字を表示（1-99）
+                // ランダムな数字を表示（1-77）
                 const randomNum = Math.floor(Math.random() * this.maxNumber) + 1;
                 this.currentNumberEl.textContent = randomNum;
                 this.currentNumberEl.classList.add('spinning');
